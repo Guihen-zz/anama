@@ -15,7 +15,7 @@ class UsuariosController < ApplicationController
   end
 
   def doacao
-    raise params
+
   end
 
   private
