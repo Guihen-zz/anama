@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/usuarios/new', to: 'usuarios#new'
   get '/usuarios/created/:id', to: 'usuarios#created' 
   get '/usuarios/doar', to: 'usuarios#doar'
+  post '/usuarios/doacao', to: 'usuarios#doacao', as: 'doacao'
   
   get '/instituicoes/', to: 'instituicoes#index'
   get '/instituicoes/:id', to: 'instituicoes#escolhida', as: 'instituicao_escolhida'

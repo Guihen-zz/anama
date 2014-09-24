@@ -14,6 +14,10 @@ class UsuariosController < ApplicationController
   def doar
   end
 
+  def doacao
+    raise params
+  end
+
   private
 
     def usuario_params
