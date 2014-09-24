@@ -1,0 +1,17 @@
+<div class="alert alert-info" role="alert">Alimento a ser Doado</div>
+<%= form_for :alimento, url: alimentos_path do |f| %>
+
+  <p>
+    <%= f.text_area :descricao, {class: 'form-control', 
+      placeholder: "Descreva aqui os alimentos a serem doados e suas quantidades."} %>
+  </p>
+
+  <p style="width: 100%; text-align: center">
+    <%= f.submit "Concluir", {class: 'btn btn-default'} %>
+  </p>
+<% end %>
+
+
+
+
+

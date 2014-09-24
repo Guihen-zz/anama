@@ -1,0 +1,5 @@
+<% @instituicoes.each do |i| %>
+  <p>
+    <%= link_to i.nome, instituicao_escolhida_path(i.id), class: "btn btn-default" %>
+  </p>
+<% end %>

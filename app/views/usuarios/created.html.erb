@@ -1,0 +1,17 @@
+<div class="alert alert-info" role="alert">Salvando Dados, por favor, aguarde...</div>
+
+<%= hidden_field_tag(:email, @usuario.email) %>
+
+<script type="text/javascript">
+  
+  $( document).ready( function(){
+    
+    salvaDados()
+  });
+
+  function salvaDados()
+  {
+    alert("chamando android...");
+    Android.salvaMetaDados( $("#email").val(), "senha");
+  }
+</script>
