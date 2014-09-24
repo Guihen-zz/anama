@@ -1,5 +1,6 @@
 class UsuariosController < ApplicationController
-  
+  before_filter :authenticate_usuario! # devise method
+
   def new
   end
 

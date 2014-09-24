@@ -1,0 +1,4 @@
+# Ignore Max OS metadata
+.DS_Store
+Gemfile.lock
+/log/*

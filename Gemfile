@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# User authentication 24/09/2014
+gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'

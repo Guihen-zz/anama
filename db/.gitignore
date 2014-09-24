@@ -1,0 +1,3 @@
+# Excludes db
+test.sqlite3
+development.sqlite3

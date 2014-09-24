@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+
+  root to: 'usuarios#doar'
+
+  devise_for :usuarios
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   resources :usuarios, except: "show"
-
-  # You can have the root of your site routed with "root"
-  root 'usuarios#new'
 
   # Usuario cadastrado: tela para salvar dados no android
   get '/usuarios/new', to: 'usuarios#new'
