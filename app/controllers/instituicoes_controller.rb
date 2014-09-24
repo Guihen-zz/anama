@@ -6,6 +6,7 @@ class InstituicoesController < ApplicationController
 
   def escolhida
     session[:instituicao] = params[:id]
+    redirect_to '/usuarios/doar'
   end
 
 end

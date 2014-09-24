@@ -3,6 +3,5 @@
 
 Gemfile.lock
 /log/*
-
-# Ignore env conf
 .env
+/tmp

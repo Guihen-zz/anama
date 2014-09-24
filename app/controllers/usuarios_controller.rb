@@ -8,11 +8,7 @@ class UsuariosController < ApplicationController
     @usuario = Usuario.new( usuario_params)
  
     @usuario.save
-    redirect_to action: 'created', id: @usuario.id
-  end
-
-  def created
-    @usuario = Usuario.find(params[:id])
+    redirect_to action: 'doar'
   end
 
   def doar
